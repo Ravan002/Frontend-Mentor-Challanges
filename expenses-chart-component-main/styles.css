@@ -1,0 +1,115 @@
+*{
+    font-family: 'DM Sans';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(27, 66%, 92%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.my_balance{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 1rem;
+    margin-bottom: 1.2rem;
+}
+.balance span{
+    color: hsl(27, 66%, 92%);
+    font-size: 01rem;
+    font-weight: 400;
+
+}
+.balance h1{
+    font-size: 1.8rem;
+
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.details{
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+.details h1{
+    font-size: 1.8rem;
+    color: hsl(25, 47%, 15%);
+}
+
+#data{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+.eachData{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.2rem;
+}
+.showAmount{
+    margin-bottom: 0.3rem;
+    background-color: black;
+    color: white;
+    padding: 0.3rem 0.4rem;
+    border-radius: 0.5rem;
+    opacity: 0;
+    visibility: hidde;
+}
+.day{
+    font-size: 0.8rem;
+    color: hsl(28, 10%, 53%)
+}
+.cashAmount{
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 0.3rem;
+    width: 2.5rem;
+    cursor: pointer;
+}
+.cashAmount.max_payment{
+    background-color: hsl(186, 34%, 60%);
+}
+
+.footer{
+    padding-top: 1.5rem;
+}
+.footer p{
+    color: hsl(28, 10%, 53%);
+}
+.total_month{
+    display: flex;
+    justify-content: space-between;
+}
+.total_month h1{
+    color: hsl(25, 47%, 15%);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.total_left{
+    text-align: end;
+}
+.total_left span{
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+}
+
+.amount-info-active {
+    opacity: 1;
+    visibility: visible
+}
+
+.graph-active {
+    opacity: .6
+}
