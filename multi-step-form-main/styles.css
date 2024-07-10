@@ -1,0 +1,217 @@
+:root{
+    
+    /* PRIMARY */
+    --MarineBlue: hsl(213, 96%, 18%);
+    --PurplishBlue: hsl(243, 100%, 62%);
+    --PastelBlue: hsl(228, 100%, 84%);
+    --LightBlue: hsl(206, 94%, 87%);
+    --StrawberryRed: hsl(354, 84%, 57%);
+
+
+    /* NEUTRAL */
+    --CoolGray: hsl(231, 11%, 63%);
+    --LightGray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Magnolia);
+}
+
+.whole_part{
+    background-color: var(--White);
+    padding: 0.75rem;
+    border-radius: 16px;
+    display: flex;
+    align-items: flex-start;
+}
+.sidebar{
+    background: url('assets/images/bg-sidebar-desktop.svg') no-repeat;
+    width: 274px;
+    height: 568px;
+    padding: 2rem;
+
+}
+.steps{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.step{
+    display: flex;
+    gap: 0.8rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+.step_left{
+    color: var(--White);
+    border: 1.2px solid var(--White);
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.currentStep{
+    border: none;
+    background-color: var(--LightBlue);
+    color: var(--MarineBlue);
+}
+
+.step_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.2rem;
+}
+.step_number{
+    font-size: 0.7rem;
+    color: var(--LightGray);
+}
+.step_title{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--White);
+}
+.changePart{
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    width: 38rem;
+}
+.dataEntry{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+.title h1{
+    color: var(--MarineBlue);
+}
+.title sub{
+    font-size: 1rem;
+    color: var(--CoolGray);
+}
+.operations{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+label{
+    display: block;
+    color: var(--MarineBlue);
+}
+input{
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: .25rem;
+    border: 1px solid var(--LightGray);
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+#nextStep, #goBack{
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    
+    cursor: pointer;
+}
+#nextStep{
+    background-color: var(--MarineBlue);
+    color: var(--White);
+}
+#goBack{
+    color: var(--LightGray);
+    background-color: var(--White);
+    /* visibility: hidden; */
+}
+
+
+.billingOptions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.option{
+    height: 10rem;
+    width: 9rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--LightGray);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    cursor: pointer;
+}
+.option.optionTitle{
+    color: red
+}
+.month_year_billing{
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--CoolGray);
+    border-radius: 10px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.change_month_year{
+    padding:0.25rem;
+    background-color: var(--MarineBlue);
+    width: 3rem;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.change_to_year{
+    justify-content: flex-end;
+}
+
+.change_icon{
+    background-color: var(--White);
+    border-radius: 100%;
+    width: .9rem;
+    height: .9rem;
+}
+img{
+    display: inline;
+}
